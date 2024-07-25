@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-color: rgb(164, 241, 193);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: #fff;
+    max-width: 1100px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.container .contact::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 80%;
+    background-color: #75788f;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 40px;
+}
+.container .contact .address {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container .contact .address i {
+    font-size: 30px;
+    color: #334be8;
+}
+.container .contact .address h2 {
+    font-size: 20px;
+    color: #334be8;
+}
+.container .contact .address p {
+    font-size: 16px;
+    color: #d1d6f4;
+}
+.container .contact .phone {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container .contact .phone i {
+    font-size: 30px;
+    color: #334be8;
+}
+.container .contact .phone h2 {
+    font-size: 20px;
+    color: #334be8;
+}
+.container .contact .phone p {
+    font-size: 16px;
+    color: #d1d6f4;
+}
+.container .contact .email {
+    text-align: center;
+}
+.container .contact .email i {
+    font-size: 30px;
+    color: #334be8;
+}
+.container .contact .email h2 {
+    font-size: 20px;
+    color: #334be8;
+}
+.container .contact .email p {
+    font-size: 16px;
+    color: #d1d6f4;
+}
+.container .message {
+    margin-left: 100px;
+}
+.container .message h2 {
+    font-size: 25px;
+    color: #334be8;
+}
+.container .message p {
+    font-size: 16px;
+    color: #75788f;
+    margin-bottom: 10px;
+}
+.container .message form {
+    display: flex;
+    flex-direction: column;
+}
+.container .message form input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #dbdce5;
+    margin-bottom: 10px;
+    outline: none;
+}
+.container .message form textarea {
+    padding: 10px;
+    font-size: 16px;
+    height: 100px;
+    border-radius: 5px;
+    border: none;
+    background-color: #dbdce5;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+.container .message form .button {
+    width: 110px;
+    background-color: #334be8;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.container .message form .button:hover {
+    background-color: #5668e1;
+}
+@media (max-width: 920px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+    .container .message {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    .container .contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container .contact .address {
+        margin: 20px 50px;
+    }
+    .container .contact .phone {
+        margin: 20px 50px;
+    }
+    .container .contact .email {
+        margin: 20px 50px;
+    }
+    .container .contact::before {
+        display: none;
+    }
+}
